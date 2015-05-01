@@ -1,4 +1,7 @@
 var proto = require('@dmail/proto');
+var polyfill = require('@dmail/polyfill');
+require('@dmail/symbol');
+
 var Iterator = require('./iterator');
 
 // see http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array-iterator-objects
@@ -43,6 +46,6 @@ var ArrayIterator = proto.extend.call(Iterator, {
 ArrayIterator = ArrayIterator.constructor;
 
 module.exports = ArrayIterator;
-require('@dmail/object/polyfill')(Array.prototype, Symbol.iterator, function(){
+polyfill(Array.prototype, Symbol.iterator, function(){
 	return new ArrayIterator(this, 'value');
 });

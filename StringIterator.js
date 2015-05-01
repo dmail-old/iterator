@@ -1,5 +1,8 @@
-var Iterator = require('./Iterator');
 var proto = require('@dmail/proto');
+var polyfill = require('@dmail/polyfill');
+require('@dmail/symbol');
+
+var Iterator = require('./Iterator');
 
 // see http://people.mozilla.org/~jorendorff/es6-draft.html#sec-%stringiteratorprototype%.next
 var StringIterator = proto.extend.call(Iterator, {
@@ -49,6 +52,6 @@ var StringIterator = proto.extend.call(Iterator, {
 
 StringIterator = StringIterator.constructor;
 module.exports = StringIterator;
-require('@dmail/object/polyfill')(String.prototype, Symbol.iterator, function(){
+polyfill(String.prototype, Symbol.iterator, function(){
 	return new StringIterator(this);
 });

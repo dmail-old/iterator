@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"dependencies": {
 		"@dmail/symbol": "*",
-		"@dmail/polyfill": "*"
+		"@dmail/polyfill": "*",
+		"@dmail/proto": "*"
 	},
 	"repository": {
 		"type": "git",
