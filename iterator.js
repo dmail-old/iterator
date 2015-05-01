@@ -19,7 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 */
 
 require('@dmail/symbol');
-var polyfill = require('@dmail/object/polyfill');
+var polyfill = require('@dmail/polyfill');
 
 var Iterator = {
 	constructor: function(object, keyOnly){
