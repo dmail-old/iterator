@@ -1,13 +1,13 @@
 {
-	"name": "@dmail/iterator",
-	"version": "0.0.1",
-	"dependencies": {
-		"@dmail/symbol": "*",
-		"@dmail/polyfill": "*",
-		"@dmail/proto": "*"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dmail/iterator"
-	}
+  "name": "@dmail/iterator",
+  "version": "0.0.2",
+  "dependencies": {
+    "@dmail/symbol": "*",
+    "@dmail/polyfill": "*",
+    "@dmail/proto": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmail/iterator"
+  }
 }
